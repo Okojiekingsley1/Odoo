@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<link rel="stylesheet" href="form.css">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<div>
+		<!-- <?php
+				if(isset($_POST['btn1'])){
+					echo 'User submitted. ';
+
+				}
+			?> -->
+	</div>
+
+	<!-- form navbar -->
+
+
+
+
+
+	<div class="menu-bar">
+		<img class="orion-img" src="orion.jpg">
+		<ul>
+
+			<li class="active"><a href="odoo.html"><i class="fa-solid fa-house"></i>Home</a></a></li>
+			<li><a href="gallery.html"><i class="fa fa-user"></i>About Us</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li><a href="#">Mision</a></li>
+						<li><a href="#">Vision</a></li>
+						<li><a href="gallery.html">Team</a></li>
+					</ul>
+				</div>
+			</li>
+
+			<li><a href="#"><i class="fa fa-clone"></i>Services</a>
+				<div class="sub-menu-1">
+					<ul>
+						<li class="hover-me"><a href="#">Professional Cleaning</a><i class="fa fa-angle-right"></i>
+						<li class="hover-me"><a href="#">Supply Of Stationary And Consumable</a>
+					</ul>
+				</div>
+			</li>
+			<li><a href="galleery.html"><i class="fa fa-inr"></i>Pricing</a></li>
+			<li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
+			<li><a href="gallery.html"><i class="fa fa-phone"></i>Contact</a></li>
+			<li class="hover-me"><a href="gallery.html"><i class="fa fa-angellist"></i>Bookings</a><i
+					class="fa fa-angle-bookings"> </i></li>
+		</ul>
+	</div>
+
+	<!-- form body -->
+	<section class="display">
+		<h1></h1>
+		<section class="container">
+			<header class="reg">FOR YOUR BOOKINGS</header>
+
+			<form action="/submit" method="post" class="form">
+				<div class="input-box">
+						<label>Full Name</label>
+						<input type="text" placeholder="Enter Full Name" id="fullName" name="fullName" required />
+				</div>
+		
+				<div class="input-box">
+						<label>Email Address</label>
+						<input type="text" placeholder="Enter Email Address" name="email" required />
+				</div>
+		
+				<div class="column">
+						<div class="input-box">
+								<label>Phone Number</label>
+								<input type="number" placeholder="Enter Phone Number" name="phoneNumber" required />
+						</div>
+		
+						<div class="input-box">
+								<label>Book a Date</label>
+								<input type="date" placeholder="Enter Date" name="date" required />
+						</div>
+				</div>
+		
+				<div class="gender-box">
+						<h3>Gender</h3>
+						<div class="gender-option">
+								<div class="gender">
+										<input type="radio" id="check-male" name="gender" value="m" id="male" checked />
+										<label for="check-male">Male</label>
+								</div>
+		
+								<div class="gender">
+										<input type="radio" id="check-female" name="gender" value="f" id="female" />
+										<label for="check-female">Female</label>
+								</div>
+		
+								<div class="gender">
+										<input type="radio" id="check-other" name="gender" value="o" id="other" />
+										<label for="check-other">Prefer not to say</label>
+								</div>
+						</div>
+				</div>
+		
+				<div class="input-box address">
+						<label>Address</label>
+						<input type="text" placeholder="Enter street address" name="address" required />
+						<input type="text" placeholder="Enter street address line 2" name="address2">
+						<div class="column">
+								<div class="select-box">
+										<select name="country">
+												<option hidden>Country</option>
+												<option>Nigeria</option>
+												<option>America</option>
+												<option>Japan</option>
+												<option>India</option>
+										</select>
+								</div>
+								<input type="text" placeholder="Enter your city" name="city" required>
+						</div>
+		
+						<div class="column">
+								<input type="text" placeholder="Enter your region" name="region" required>
+								<div class="select-box">
+										<select name="service">
+												<option hidden>Services</option>
+												<option>Commercial</option>
+												<option>Resident Cleaning</option>
+												<option>Post Construction</option>
+												<option>Deep Cleaning</option>
+												<option>Upholstery Cleaning</option>
+												<option>Supply Of Consumables and Stationary</option>
+										</select>
+								</div>
+						</div>
+				</div>
+		
+				<div class="container_slide">
+						<button type="submit" name="create" class="btn1" onclick="submitAction()">Submit</button>
+						<div class="popup" id="popup">
+								<h2>Thank You!</h2>
+								<p>Your details have been successfully submitted. Thanks!</p>
+						</div>
+				</div>
+		
+				<!-- JavaScript for displaying the popup -->
+				<script>
+						let popup = document.getElementById("popup");
+						let closeButton = document.getElementById("closePopup");
+		
+						function openPopup() {
+								popup.classList.add("open-popup");
+						}
+		
+						function closePopup() {
+								popup.classList.remove("open-popup");
+						}
+		
+						// Function to be executed when Submit button is clicked
+						function submitAction() {
+								openPopup(); // Open the popup
+								setTimeout(topFunction, 1000); // Scroll to the top after a delay of 1 second
+						}
+				</script>
+		</form>
+		
+			<!-- <form action="/submit" method="post" class="form">
+				<div class="input-box">
+					<label>Full Name</label>
+					<input type="text" placeholder="Enter Full Name" id="fullName" name="fullName" required />
+				</div>
+
+				<div class="input-box">
+					<label>Email Address</label>
+					<input type="text" placeholder="Enter Email Address" name="email" required />
+				</div>
+
+				<div class="column">
+					<div class="input-box">
+						<label>Phone Number</label>
+						<input type="number" placeholder="Enter Phone Number" name="number" required />
+					</div>
+
+					<div class="input-box">
+						<label>Book a Date</label>
+						<input type="date" placeholder="Enter Date" name="date" required />
+					</div>
+				</div>
+
+				<div class="gender-box">
+					<h3>Gender</h3>
+					<div class="gender-option">
+						<div class="gender">
+							<input type="radio" id="check-male" name="gender" value="m" id="male" checked />
+							<label for="check">Male</label>
+						</div>
+
+						<div class="gender">
+							<input type="radio" id="check-other" name="gender" value="f" id="female" />
+							<label for="check">Female</label>
+						</div>
+
+						<div class="gender">
+							<input type="radio" id="check-other" name="gender" value="o" id="other" />
+							<label for="check">Prefer not to say</label>
+						</div>
+					</div>
+				</div>
+
+				<div class="input-box address">
+					<label>Address</label>
+					<input type="text" placeholder="Enter street address" name="address" value="address" required />
+					<input type="text" name="" placeholder="Enter street address line 2">
+					<div class="column">
+						<div class="select-box">
+							<select>
+								<option hidden>Country</option>
+								<option>Nigeria</option>
+								<option>America</option>
+								<option>Japan</option>
+								<option>India</option>
+							</select>
+						</div>
+						<input type="text" name="text" placeholder="Enter your city" name="city" value="city" required>
+					</div>
+
+					<div class="column">
+						<input type="text" name="text" placeholder="Enter your region" name="region" value="region" required>
+						<div class="select-box">
+							<select>
+								<option hidden>Services</option>
+								<option>Commercial</option>
+								<option>Resident Cleaning</option>
+								<option>Post Construction</option>
+								<option>Deep Cleaning</option>
+								<option>Upholstery Cleaning</option>
+								<option>Supply Of Consumables and Stationary</option>
+							</select>
+
+						</div>
+					</div>
+				</div>
+
+
+				<!--------------------------------------------- slide code ---------------------------------------------->
+<!-- 
+				<div class="container_slide">
+					<button type="submit" name="create" class="btn1" onclick="submitAction()">Submit</button>
+					<div class="popup" id="popup">
+						<h2>Thank You!</h2>
+						<p>Your details have been successfully submitted. Thanks!</p>
+						<!-- <button type="button" id="closePopup" onclick="closePopup()">OK</button> -->
+					<!-- </div> -->
+				<!-- </div> --> 
+
+				<!-- <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button> -->
+
+				<!-- <script>
+					let popup = document.getElementById("popup");
+					let closeButton = document.getElementById("closePopup");
+
+					function openPopup() {
+						popup.classList.add("open-popup");
+					}
+
+					function closePopup() {
+						popup.classList.remove("open-popup");
+					}
+
+					// When the user scrolls down 20px from the top of the document, show the button
+					window.onscroll = function () {
+						scrollFunction()
+					};
+
+					function scrollFunction() {
+						let myBtn = document.getElementById("myBtn");
+						if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+							myBtn.style.display = "block";
+						} else {
+							myBtn.style.display = "none";
+						}
+					}
+
+					// When the user clicks on the button, scroll to the top of the document
+					function topFunction() {
+						document.body.scrollTop = 0; // For Safari
+						document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+					}
+
+					// Function to be executed when Submit button is clicked
+				// 	function submitAction() {
+				// 		openPopup(); // Open the popup
+				// 		setTimeout(topFunction); // Scroll to the top after a delay of 1 second
+				// 	}
+				//  </script> -->
+
+			<!-- </form> -->
+		</section>
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

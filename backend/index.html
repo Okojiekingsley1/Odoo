@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+</head>
+<body>
+    <h1>Booking Form</h1>
+    <form **id="bookingForm"** action="/booking" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+        <button type="submit">Book Now</button>
+    </form>
+
+    <script>
+        // Handle form submission with validation (optional)
+        const form = document.getElementById('bookingForm'); // Use the corrected ID
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            // Validate form fields (e.g., email format)
+            if (!isValidEmail(form.email.value)) {
+                alert('Please enter a valid email address.');
+                return;
+            }
+
+            // Submit the form using fetch or XMLHttpRequest (e.g., for older browsers)
+            fetch('/booking', {
+                method: 'POST',
+                body: new URLSearchParams(new FormData(form))
+            })
+            .then(response => response.text())
+            .then(data => {
+                alert(data); // Display response message
+            });
+        });
+    </script>
+</body>
+</html>
