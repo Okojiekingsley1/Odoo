@@ -7,7 +7,6 @@ body{
   background-image:url(pi18.jpg);
   background-size:cover;
   background-position:center;
-  
   font-family: sans-serif;
 }
 /*head*/
@@ -18,6 +17,7 @@ body{
   text-align: center;
   justify-content:space-between;
   position: sticky;
+  z-index: 99;
   
 }
 .orion-img{
@@ -31,16 +31,18 @@ body{
   color:#fff;
   position: sticky;
   top: 0;
+  
 }
 .menu-bar ul li{
   width:120px;
   margin:15px;
   padding:15px;
-  z-index: 99;
+  
 }
 .menu-bar ul li a{
   text-decoration:none;
   color:#fff;
+  z-index: 99;
 }
 .active, .menu-bar ul li:hover{
   background:#2bab0d;
