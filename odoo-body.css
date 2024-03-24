@@ -9,7 +9,6 @@
 	padding: 40px;
 	width: 100%;
 	min-height:100vh;
-	background-color:;
 }
 .todo-app{
 	width:100%;
@@ -37,7 +36,6 @@
 	background-size: cover;
 	background-image: url(pi22.jpg);
 	background-position: center;
-	color: darkorange;
 }
 .topic-orio{
 	font-size:80px;
@@ -71,11 +69,7 @@
 .book:active{
 	opacity: 0.2;
 }
-.fa-angle-right{
-	margin-left: ;
-}
 .write{
-	float: ;
 	margin-left: 350px;
 }
 
@@ -102,17 +96,13 @@
 	color: white;
 	font-size: 30px;
 	font-family: roboto;
-	background-color: green;
+	background-color: blue;
 	text-align: center;
 }
 .conc{
 	background-color: orange;
 }
-
-
-body{
-	background:;
-}
+/* footer */
 footer{
 	width:100%;
 	position: absolute;
@@ -257,6 +247,18 @@ hr{
    .write{
 	margin-left: 5px;
 }
+}
+@media(max-width:1200px){
+	footer{
+		width:100%;
+		position: absolute;
+		bottom: 40;
+		color: #fff;
+		padding: 100px 0 30px;
+		border-top-left-radius:125px;
+		font-size: 13px;
+		line-height: 20px;
+	}
 }
 
 
