@@ -250,12 +250,11 @@ button:hover {
 }
 @media (max-width:1200px){
 	.container {
-		max-width: 400px;
+		max-width: 200px;
 		margin: 40px 20px auto;
 		padding: 20px;
 		border: 1px solid #ccc;
-		max-width: 700px;
-		width: 100%;
+		width: 80%;
 		background-image: url(orio1.jpg);
 		padding: 25px;
 		border-radius: 8px;
