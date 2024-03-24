@@ -215,11 +215,6 @@ button:hover {
     display: column;
   }
 }
-@media (max-width:500px) {
-	.container label input{
-		display: column;
-	}
-}
 
 @media (max-width: 500px) {
   .menu-bar {
@@ -241,16 +236,10 @@ button:hover {
     padding: 10px;
   }
 }
-
-
-@media (max-width:992px){
-	.container label{
-		display: column;
-	}
-}
 @media (max-width:1200px){
 	.container {
-		max-width: 200px;
+		display: column;
+		max-width: 500px;
 		margin: 40px 20px auto;
 		padding: 20px;
 		border: 1px solid #ccc;
@@ -259,5 +248,12 @@ button:hover {
 		padding: 25px;
 		border-radius: 8px;
 		box-shadow: 0 0 15px rgb(0, 100, 150, 1.0);
+	}
+}
+@media (max-width:1200px){
+	h2{
+		text-align: center;
+		font-size: 13px;
+		white-space: nowrap;
 	}
 }
