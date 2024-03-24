@@ -215,6 +215,12 @@ button:hover {
     display: column;
   }
 }
+@media (max-width:1200px) {
+	.form label input{
+		display: column;
+		margin-left: -400px;
+	}
+}
 
 @media (max-width: 500px) {
   .menu-bar {
