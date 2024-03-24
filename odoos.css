@@ -27,8 +27,8 @@ body{
   top: 0;
 }
 .orion-img{
-  width:180px;
-  height: 95px;
+  width:300px;
+  height: 100px;
   cursor: pointer;
 }
 .menu-bar ul{
@@ -219,7 +219,7 @@ body{
 footer{
 	width:100%;
 	position: absolute;
-	bottom: -5000px;
+	bottom: -100%px;
 	background: linear-gradient(to right, #00093c, #2d0b00);
 	color: #fff;
 	padding: 100px 0 30px;
@@ -240,10 +240,10 @@ footer{
 	padding: 10px;
 	font-family: arial;
 }
-.col p{
+/*.col p{
 	color: darkorange;
 	font-family: roboto;
-}
+}*/
 .col a{
 	color: darkorange;
 	font-family: roboto;
@@ -253,7 +253,8 @@ footer{
 	font-family: roboto;
 } 
 .logo{
-	width:80px;
+	width:200px;
+	height: 150px;
 	margin-bottom: 30px;
 }
 .col h3{
@@ -371,12 +372,66 @@ hr{
 
 
 
+@media (max-width: 1200px) {
+  .menu-bar {
+    padding: 0 10px;
+  }
+}
 
+@media (max-width: 992px) {
+  .menu-bar ul li {
+    margin: 10px;
+    padding: 10px;
+  }
+  .menu-bar ul li a{
+    display: column;
+  }
+}
 
+@media (max-width: 500px) {
+  .menu-bar {
+    display: column;
+    flex-direction: column;
+    height: auto;
+  }
 
+  .menu-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topc-orio{
+    display: column;
+  }
 
-
-
+  .menu-bar ul li {
+    margin: 0;
+    padding: 10px;
+  }
+}
+@media (max-width:200px){
+	.hero-content{
+		display: column;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+}
+@media (max-width:200px){
+	.herow{
+		display: column;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+}
+@media (max-width:200px){
+	.herow .hero-content{
+		display: column;
+		flex-direction: column;
+		align-items: center;
+		height: auto;
+	}
+}
 
 
 

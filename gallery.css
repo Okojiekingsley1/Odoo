@@ -7,6 +7,7 @@ body{
   background-image:url(pi18.jpg);
   background-size:cover;
   background-position:center;
+  
   font-family: sans-serif;
 }
 /*head*/
@@ -18,11 +19,10 @@ body{
   justify-content:space-between;
   position: sticky;
   z-index: 99;
-  
 }
 .orion-img{
-  width:180px;
-  height: 95px;
+  width:300px;
+  height: 100px;
   cursor: pointer;
 }
 .menu-bar ul{
@@ -31,13 +31,12 @@ body{
   color:#fff;
   position: sticky;
   top: 0;
-  
 }
 .menu-bar ul li{
   width:120px;
   margin:15px;
   padding:15px;
-  
+  z-index: 99;
 }
 .menu-bar ul li a{
   text-decoration:none;
@@ -100,6 +99,115 @@ body{
   marging-left:140px;
   background-color: rgba(0,100,0);
 }
+
+
+
+
+
+
+@media(max-width:500px){
+  .menu-bar{
+    display: flex;
+  }
+}
+
+.menu-bar ul li a{
+  text-decoration:none;
+  color:#fff;
+}
+.active, .menu-bar ul li:hover{
+  background:#2bab0d;
+  border-radius:3px;
+}
+.menu-bar .fa{
+  margin-right:8px;
+}
+.sub-menu-1{
+  display:none;
+
+}
+.sub-menu-1:hover{
+  cursor: pointer;
+}
+.menu-bar ul li:hover .sub-menu-1{
+  display:block;
+  position:absolute;
+  background:rgb(0, 100, 0);
+  margin-top:15px;
+  margin-left:-15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul{
+  display: block;
+  margin: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu-1 ul li{
+  width:150px;
+  padding:10px;
+  border-bottom:1px dotted #fff;
+  background:transparent;
+  border-radius:0;
+  text-align: left;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li:last-child{
+  border-bottom:none;
+}
+.menu-bar ul li:hover .sub-menu-1 ul li a:hover{
+  color:#b2ff00;
+}
+.fa-angle-right{
+  float: right;
+}
+.sub-menu-2{
+  display:none;
+}
+.sub-menu-2:hover{
+  cursor: pointer;
+}
+.hover-me:hover .sub-menu-2{
+  position:absolute;
+  display: block;
+  margin-top: -40px;
+  marging-left:140px;
+  background-color: rgba(0,100,0);
+}
+
+@media(max-width:500px){
+  body{
+    background-color: red;
+
+  }
+  .active{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*body*/
 .container{
@@ -244,11 +352,6 @@ body{
 }
 
 
-
-
-
-
-
 @keyframes animate {
 	from{
 		opacity: 0;
@@ -260,6 +363,31 @@ body{
 		transform:translate(0);
 		filter:blur(0);
 	}
+}
+/*slides*/
+.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+img {
+  width:60%;
+  height: 470px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
 
@@ -289,10 +417,11 @@ footer{
 	padding: 10px;
 	font-family: arial;
 }
-.col p{
+/*.col p{
 	color: darkorange;
 	font-family: roboto;
-}
+	left: 80px;
+}*/
 .col a{
 	color: darkorange;
 	font-family: roboto;
@@ -302,8 +431,9 @@ footer{
 	font-family: roboto;
 } 
 .logo{
-	width:80px;
-	margin-bottom: 30px;
+	width:200px;
+	height: 150px;
+	margin-bottom: 100px;
 }
 .col h3{
 	width:fit-content;
@@ -395,14 +525,6 @@ hr{
 	left: 10px;
 	animation:moving 2s linear infinite;
 }
-@keyframes moving{
-    0%{
-    	left: -20px;
-    }
-    100%{
-    	left: 100%;
-    }
-}
 
 
 
@@ -413,8 +535,9 @@ hr{
 
   }
   .menu-bar ul li{
-  	display: flex;
+  	display: column;
   	flex-direction: column;
+  	align-items: center;
   }
 }
 
@@ -426,10 +549,45 @@ hr{
 
 
 
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  .menu-bar {
+    padding: 0 10px;
+  }
+}
 
+@media (max-width: 992px) {
+  .menu-bar ul li {
+    margin: 10px;
+    padding: 10px;
+  }
+  .menu-bar ul li a{
+    display: column;
+  }
+}
 
+@media (max-width: 500px) {
+  .menu-bar {
+    display: column;
+    flex-direction: column;
+    height: auto;
+  }
 
+  .menu-bar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .topc-orio{
+    display: column;
+  }
 
+  .menu-bar ul li {
+    margin: 0;
+    padding: 10px;
+  }
+}
+
+/*new responsive code */
 
 
 

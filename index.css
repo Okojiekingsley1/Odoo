@@ -1,7 +1,15 @@
-
+/*header*/
+.menu-bar{
+  background:rgb(40, 50, 0);
+  text-align: center;
+  display:flex;
+  text-align: center;
+  justify-content:space-between;
+  position: sticky;
+}
 .orion-img{
-  width:180px;
-  height: 95px;
+  width: 300px;
+  height: 100px;
   cursor: pointer;
 }
 .menu-bar ul{
@@ -17,8 +25,8 @@
 
 /*list responsiveness*/
 @media(max-width:500px){
-  .menu-bar ul li{
-    display: none;
+  .menu-bar{
+    display: flex;
   }
 }
 
@@ -93,6 +101,32 @@
     flex-direction: column;
   }
 }
+
+/*slides*/
+/*.slideshow-container {
+  max-width: 800px;
+  position: relative;
+  margin: auto;
+}
+
+.slides {
+  display: none;
+}
+
+img {
+  width:540;
+  height: 470px;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}*/
 
 
 
@@ -283,6 +317,5 @@ body {
     padding: 10px;
   }
 }
-
 
 /*new responsive code */

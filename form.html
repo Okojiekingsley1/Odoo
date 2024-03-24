@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>form</title>
-	<link rel="stylesheet" href="form.css">
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WhatsApp Form</title>
+<link rel="stylesheet" href="form.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
-	<div>
-		<!-- <?php
-				if(isset($_POST['btn1'])){
-					echo 'User submitted. ';
-
-				}
-			?> -->
+   <div>
 	</div>
 
 	<!-- form navbar -->
 
-
-
-
-
 	<div class="menu-bar">
-		<img class="orion-img" src="orion.jpg">
+		<img class="orion-img" src="orion11.png">
 		<ul>
 
 			<li class="active"><a href="odoo.html"><i class="fa-solid fa-house"></i>Home</a></a></li>
@@ -51,123 +39,83 @@
 			<li><a href="galleery.html"><i class="fa fa-inr"></i>Pricing</a></li>
 			<li><a href="#"><i class="fa fa-edit"></i>Training</a></li>
 			<li><a href="gallery.html"><i class="fa fa-phone"></i>Contact</a></li>
-			<li class="hover-me"><a href="gallery.html"><i class="fa fa-angellist"></i>Bookings</a><i
+			<li class="hover-me"><a href="form.html"><i class="fa fa-angellist"></i>Bookings</a><i
 					class="fa fa-angle-bookings"> </i></li>
 		</ul>
 	</div>
+	<!-- form Page -->
+<div class="container">
+  <h2>For Your Bookings</h2>
+  <form id="whatsappForm" class="form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email" required><br>
+    <label for="address">Address:</label><br>
+    <input type="text" id="address" name="address" required><br>
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" class="gender" required>
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <label for="country">Country:</label><br>
+    <input type="text" id="country" name="country" required><br>
+    <label for="phoneNumber">Phone Number:</label><br>
+    <input type="text" id="phoneNumber" name="phoneNumber" required><br>
 
-	<!-- form body -->
-	<section class="display">
-		<h1></h1>
-		<section class="container">
-			<header class="reg">FOR YOUR BOOKINGS</header>
+<!--     <label for="services">Services:</label><br>
+    <input type="text" id="services" name="services" required><br> -->
+    <label for="services">Services:</label><br>
+    <select id="services" name="services" class="gender" required>
+      <option value="Commercial">Commercial</option>
+      <option value="resident cleaning">Resident Cleaning</option>
+      <option value="post construction">Post Construction</option>
+      <option value="deep cleaning">Deep Cleaning</option>
+      <option value="upholstery cleaning">Upholstery Cleaning</option>
+      <option value="supply of consumables and Stationary">Supply of Consumables and Stationary</option>
+      <!-- <option value="option7">Option 7</option>
+      <option value="option8">Option 8</option> --> <!-- Added option -->
+    </select><br>
 
-			<form action="/submit" method="post" class="form">
-				<div class="input-box">
-						<label>Full Name</label>
-						<input type="text" placeholder="Enter Full Name" id="fullName" name="fullName" required />
-				</div>
-		
-				<div class="input-box">
-						<label>Email Address</label>
-						<input type="text" placeholder="Enter Email Address" name="email" required />
-				</div>
-		
-				<div class="column">
-						<div class="input-box">
-								<label>Phone Number</label>
-								<input type="number" placeholder="Enter Phone Number" name="phoneNumber" required />
-						</div>
-		
-						<div class="input-box">
-								<label>Book a Date</label>
-								<input type="date" placeholder="Enter Date" name="date" required />
-								</div>
-						    </div>
-		
-				<div class="gender-box">
-						<h3>Gender</h3>
-						<div class="gender-option">
-								<div class="gender">
-										<input type="radio" id="check-male" name="gender" value="m" id="male" checked />
-										<label for="check-male">Male</label>
-								</div>
-		
-								<div class="gender">
-										<input type="radio" id="check-female" name="gender" value="f" id="female" />
-										<label for="check-female">Female</label>
-								</div>
-		
-								<div class="gender">
-										<input type="radio" id="check-other" name="gender" value="o" id="other" />
-										<label for="check-other">Prefer not to say</label>
-								</div>
-						</div>
-				</div>
-		
-				<div class="input-box address">
-						<label>Address</label>
-						<input type="text" placeholder="Enter street address" name="address" required />
-						<input type="text" placeholder="Enter street address line 2" name="address2">
-						<div class="column">
-								<div class="select-box">
-										<select name="country">
-												<option hidden>Country</option>
-												<option>Nigeria</option>
-												<option>America</option>
-												<option>Japan</option>
-												<option>India</option>
-										</select>
-								</div>
-								<input type="text" placeholder="Enter your city" name="city" required>
-						</div>
-		
-						<div class="column">
-								<input type="text" placeholder="Enter your region" name="region" required>
-								<div class="select-box">
-										<select name="service">
-												<option hidden>Services</option>
-												<option>Commercial</option>
-												<option>Resident Cleaning</option>
-												<option>Post Construction</option>
-												<option>Deep Cleaning</option>
-												<option>Upholstery Cleaning</option>
-												<option>Supply Of Consumables and Stationary</option>
-										</select>
-								</div>
-						</div>
-				</div>
-		
-				<div class="container_slide">
-						<button type="submit" name="create" class="btn1" onclick="submitAction()">Submit</button>
-						<div class="popup" id="popup">
-								<h2>Thank You!</h2>
-								<p>Your details have been successfully submitted. Thanks!</p>
-						</div>
-				</div>
-		
-				<!-- JavaScript for displaying the popup -->
-				<script>
-						let popup = document.getElementById("popup");
-						let closeButton = document.getElementById("closePopup");
-		
-						function openPopup() {
-								popup.classList.add("open-popup");
-						}
-		
-						function closePopup() {
-								popup.classList.remove("open-popup");
-						}
-		
-						// Function to be executed when Submit button is clicked
-						function submitAction() {
-								openPopup(); // Open the popup
-								setTimeout(topFunction, 1000); // Scroll to the top after a delay of 1 second
-						}
-				</script>
-		</form>
-		</section>
-	</section>
+
+    <button type="submit" class="send">Submit</button>
+  </form>
+</div>
+
+
+<script>
+
+	document.getElementById("whatsappForm").addEventListener("submit", function(event) {
+  event.preventDefault();
+  const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+  const address = document.getElementById("address").value;
+  const gender = document.getElementById("gender").value;
+  const message = document.getElementById("message").value;
+  const country = document.getElementById("country").value;
+  const phoneNumber = document.getElementById("phoneNumber").value;
+  const services = document.getElementById("services").value;
+  
+  // Constructing the WhatsApp message
+  const whatsappMessage = `Name: ${name}%0A` +
+                          `Email: ${email}%0A` +
+                          `Address: ${address}%0A` +
+                          `Gender: ${gender}%0A` +
+                          `Message: ${message}%0A` +
+                          `Country: ${country}%0A` +
+                          `Phone Number: ${phoneNumber}%0A` +
+                          `Services: ${services}`;
+  
+  // Replace '1234567890' with your WhatsApp number
+  const whatsappNumber = '+2348050626974'; 
+  const url = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`;
+  window.open(url, "_blank");
+});
+</script>
+
 </body>
-
 </html>
+
