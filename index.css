@@ -27,6 +27,7 @@
 @media(max-width:500px){
   .menu-bar{
     display: flex;
+    background: lightslategray;
   }
 }
 
