@@ -90,7 +90,7 @@ body{
 .fa-angle-right{
   float: right;
 }
-.sub-menu-2{
+/* .sub-menu-2{
   display:none;
 }
 .sub-menu-2:hover{
@@ -102,10 +102,7 @@ body{
   margin-top: -40px;
   margin-left:140px;
   background-color: rgba(0,100,0);
-}
-
-
-
+} */
 body{
 	background-image: url(pi20.jpg);
 	background-size: 440px;
