@@ -168,15 +168,12 @@ body{
   position:absolute;
   display: block;
   margin-top: -40px;
-  margin-left:140px;
+  marging-left:140px;
   background-color: rgba(0,100,0);
 }
 
 @media(max-width:500px){
   body{
-    position: sticky ;
-		
-
   }
   .active{
     display: flex;
