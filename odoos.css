@@ -23,7 +23,7 @@ body{
   margin-top: 20px;
   margin-bottom: 20px;
   height: 95px;
-  position: sticky;
+  /* position: sticky; */
   top: 0;
 }
 .orion-img{

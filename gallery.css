@@ -17,7 +17,8 @@ body{
   display:flex;
   text-align: center;
   justify-content:space-between;
-  position: sticky;
+  position: fixed;
+	top: 0;
   z-index: 99;
 }
 .orion-img{
@@ -168,13 +169,14 @@ body{
   position:absolute;
   display: block;
   margin-top: -40px;
-  marging-left:140px;
+  margin-left:140px;
   background-color: rgba(0,100,0);
 }
 
 @media(max-width:500px){
   body{
-    background-color: red;
+    position: sticky ;
+		top: 0;
 
   }
   .active{
