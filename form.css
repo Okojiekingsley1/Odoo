@@ -103,6 +103,7 @@ body{
   margin-left:140px;
   background-color: rgba(0,100,0);
 } */
+
 body{
 	background-image: url(pi20.jpg);
 	background-size: 440px;
@@ -218,9 +219,7 @@ button:hover {
     display: column;
     flex-direction: column;
     height: auto;
-		position: absolute;
   }
-}
 
   .menu-bar ul {
     flex-direction: column;
