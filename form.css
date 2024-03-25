@@ -218,7 +218,9 @@ button:hover {
     display: column;
     flex-direction: column;
     height: auto;
+		position: absolute;
   }
+}
 
   .menu-bar ul {
     flex-direction: column;
