@@ -204,6 +204,15 @@ body{
 		width: 100%;
 	}
 }
+@media(max-width:1200px){
+	.hero-content p{
+		width: 100%;
+		margin-left: 5px;
+	}
+	.hero-content button{
+		margin-left: 5px;
+	}
+}
 
 
 
@@ -219,7 +228,7 @@ body{
 footer{
 	width:100%;
 	position: absolute;
-	bottom: -100%;
+	bottom: -100%px;
 	background: linear-gradient(to right, #00093c, #2d0b00);
 	color: #fff;
 	padding: 100px 0 30px;
@@ -335,7 +344,6 @@ hr{
 	top: 25px;
 	left: 0;
 	overflow: hidden;
-	text-decoration: ;
 }
 .underline span{
 	width: 15px;
@@ -355,16 +363,24 @@ hr{
     	left: 100%;
     }
 }
-
+@media screen and (max-width: 768px){
+ footer{
+	width:100%;
+	position: absolute;
+	bottom: -360%;
+	background: linear-gradient(to right, #00093c, #2d0b00);
+	color: #fff;
+	padding: 100px 0 30px;
+	border-top-left-radius:125px;
+	font-size: 13px;
+	line-height: 20px;
+}
+}
 
 
 
 @media(max-width:500px){
   body{
-    background-color: red;
-
-  }
-  .menu-bar ul li{
   	display: flex;
   	flex-direction: column;
   }
