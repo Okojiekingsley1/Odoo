@@ -17,8 +17,7 @@ body{
   display:flex;
   text-align: center;
   justify-content:space-between;
-  position: fixed;
-	top: 0;
+  position: sticky;
   z-index: 99;
 }
 .orion-img{
@@ -176,7 +175,7 @@ body{
 @media(max-width:500px){
   body{
     position: sticky ;
-		top: 0;
+		
 
   }
   .active{
