@@ -504,7 +504,7 @@ hr{
 	.container{
 		position:absolute;
 		top:50%;
-		left: 5px;
+		left: 400px;
 		transform: translate(-50%, -50%);
 		width:1000px;
 		height: 600px;
@@ -518,7 +518,7 @@ hr{
 		height:300px;
 		position:absolute;
 		top:50%;
-		left: 5px;
+		left: 65px;
 		transform:translate(0, -50%);
 		border-radius: 20px;
 		box-shadow: 0 30px 50px #5e5e5e;
@@ -554,7 +554,7 @@ hr{
 .item .content{
 	position: absolute;
 	top:50%;
-	left:5px;
+	left:95px;
 	width:300px;
 	text-align:left;
 	color: #eee;
@@ -578,7 +578,7 @@ hr{
 .content .des{
 	margin-top:10px;
 	margin-bottom: 20px;
-	margin-left: -30px;
+	margin-left:10px;
 	opacity: 0;
 	animation: animate 1s ease-in-out 0.3s 1 forwards;
 }
