@@ -18,7 +18,7 @@ body{
 /*nav code*/
 .menu-bar{
   background:rgb(40, 50, 0);
-  display:none;
+  display:flex;
   text-align: center;
   justify-content:space-between;
   z-index: 99;
