@@ -18,14 +18,14 @@ body{
 /*nav code*/
 .menu-bar{
   background:rgb(40, 50, 0);
-  display:flex;
+  display:none;
   text-align: center;
   justify-content:space-between;
   z-index: 99;
   margin-bottom: 20px;
   height: 95px;
-  position: sticky;
-  top: 0;
+  /* position: sticky; */
+  /* top: 0; */
 }
 .orion-img{
   width:300px;
