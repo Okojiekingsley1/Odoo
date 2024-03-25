@@ -54,7 +54,6 @@ body{
 }
 .sub-menu-1{
   display:none;
-
 }
 .sub-menu-1:hover{
   cursor: pointer;
@@ -87,17 +86,11 @@ body{
 .fa-angle-right{
   float: right;
 }
-.sub-menu-2{
-  display:none;
-}
-.sub-menu-2:hover{
-  cursor: pointer;
-}
 .hover-me:hover .sub-menu-2{
   position:absolute;
   display: block;
   margin-top: -40px;
-  marging-left:140px;
+  margin-left:140px;
   background-color: rgba(0,100,0);
 }
 
@@ -248,10 +241,6 @@ footer{
 	padding: 10px;
 	font-family: arial;
 }
-/*.col p{
-	color: darkorange;
-	font-family: roboto;
-}*/
 .col a{
 	color: darkorange;
 	font-family: roboto;

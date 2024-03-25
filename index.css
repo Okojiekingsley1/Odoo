@@ -88,13 +88,13 @@
   position:absolute;
   display: block;
   margin-top: -40px;
-  marging-left:140px;
+  margin-left:140px;
   background-color: rgba(0,100,0);
 }
 
 @media(max-width:500px){
   body{
-    background-color: red;
+    /* background-color: red; */
 
   }
   .active{
